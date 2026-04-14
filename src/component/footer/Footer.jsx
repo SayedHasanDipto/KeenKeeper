@@ -16,16 +16,16 @@ const Footer = () => {
                         <p className='text-xl leading-7 font-medium mb-4'>Social Links</p>
                         <div className='flex gap-4 items-center justify-center'>
                             <div className='text-black bg-white p-3 rounded-full'>
-                                <a href=""></a>
+                                <a href="https://www.instagram.com/sayedhasandipto/" target='_blank'></a>
                                 <FaInstagramSquare />
                             </div>
                             <div className='text-black bg-white p-3 rounded-full'>
-                                <a href="https://www.facebook.com/SayedHasanDipto25">
+                                <a href="https://www.facebook.com/SayedHasanDipto25" target='_blank'>
                                     <FaFacebookSquare />
                                 </a>
                             </div>
                             <div className='text-black bg-white p-3 rounded-full'>
-                                <a href="https://x.com/devsayedhasan">
+                                <a href="https://x.com/devsayedhasan" target='_blank'>
                                     <FaSquareXTwitter />
                                 </a>
                             </div>
@@ -38,9 +38,9 @@ const Footer = () => {
                             <p className='text-[#d4d4d4]'>© 2026 KeenKeeper. All rights reserved.</p>
                         </div>
                         <div className='flex text-[#d4d4d4] gap-4'>
-                            <p>Privacy Policy</p>
-                            <p>Terms of Service</p>
-                            <p>Cookies</p>
+                            <a href="/policy">Privacy Policy</a>
+                            <a href="/terms">Terms of Service</a>
+                            <a href="/cookies">Cookies</a>
                         </div>
                     </div>
                 </div>
