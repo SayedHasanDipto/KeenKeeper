@@ -1,10 +1,17 @@
 import './App.css'
+import Footer from './component/footer/Footer'
+import Navbar from './component/navbar/Navbar'
 
 function App() {
 
   return (
     <>
-      <h1>Hello World!</h1>
+      <header className='geist'>
+        <Navbar></Navbar>
+      </header>
+      <main>
+        <Footer></Footer>
+      </main>
     </>
   )
 }
