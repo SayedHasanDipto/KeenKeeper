@@ -1,6 +1,7 @@
 import './App.css'
-import Footer from './component/footer/Footer'
-import Navbar from './component/navbar/Navbar'
+import { Outlet } from 'react-router';
+import Navbar from './component/navbar/Navbar';
+import Footer from './component/footer/Footer';
 
 function App() {
 
@@ -9,9 +10,12 @@ function App() {
       <header className='geist'>
         <Navbar></Navbar>
       </header>
-      <main>
-        <Footer></Footer>
+      <main className="min-h-screen">
+        <Outlet />
       </main>
+      <Footer></Footer>
+
+
     </>
   )
 }

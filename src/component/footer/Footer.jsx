@@ -16,13 +16,18 @@ const Footer = () => {
                         <p className='text-xl leading-7 font-medium mb-4'>Social Links</p>
                         <div className='flex gap-4 items-center justify-center'>
                             <div className='text-black bg-white p-3 rounded-full'>
+                                <a href=""></a>
                                 <FaInstagramSquare />
                             </div>
                             <div className='text-black bg-white p-3 rounded-full'>
-                                <FaFacebookSquare />
+                                <a href="https://www.facebook.com/SayedHasanDipto25">
+                                    <FaFacebookSquare />
+                                </a>
                             </div>
                             <div className='text-black bg-white p-3 rounded-full'>
-                                <FaSquareXTwitter />
+                                <a href="https://x.com/devsayedhasan">
+                                    <FaSquareXTwitter />
+                                </a>
                             </div>
                         </div>
                     </div>
