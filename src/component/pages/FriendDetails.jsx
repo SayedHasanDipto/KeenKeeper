@@ -6,6 +6,7 @@ import { ImBin } from "react-icons/im";
 import { TbPhoneCall } from "react-icons/tb";
 import { MdOutlineSms } from "react-icons/md";
 import { FiVideo } from "react-icons/fi";
+import { ToastContainer, toast } from 'react-toastify';
 
 const FriendDetails = () => {
     const { id } = useParams();
@@ -16,6 +17,12 @@ const FriendDetails = () => {
 
     const shouldBeFriends = friends.find(friend => friend.id == id)
     console.log(shouldBeFriends);
+
+    // React Tostify
+    const call = () => toast('Call with');
+    const text = () => toast('Text with');
+    const video = () => toast('Video with');
+
 
     return (
         <div className='w-6xl gap-5 pt-20 flex mx-auto'>
@@ -106,18 +113,20 @@ const FriendDetails = () => {
                 <div className='w-full h-ful bg-base-100 p-6 shadow rounded-lg col-span-3'>
                     <h1 className='font-medium text-[#244D3F] mb-4 text-xl'>Quick Check-In</h1>
                     <div className='grid grid-cols-3 gap-4'>
-                        <div className='h-24 flex items-center flex-col text-[#1F2937] text-xl justify-center btn btn-success btn-soft rounded-lg'>
+                        <button onClick={call} className='h-24 flex items-center flex-col text-[#1F2937] text-xl justify-center btn btn-success btn-soft rounded-lg'>
                             <TbPhoneCall />
                             <h1>Call</h1>
-                        </div>
-                        <div className='h-24 flex items-center flex-col text-[#1F2937] text-xl justify-center btn btn-success btn-soft rounded-lg'>
+                        </button>
+                        <button onClick={text} className='h-24 flex items-center flex-col text-[#1F2937] text-xl justify-center btn btn-success btn-soft rounded-lg'>
                             <MdOutlineSms />
                             <h1>Text</h1>
-                        </div>
-                        <div className='h-24 flex items-center flex-col text-[#1F2937] text-xl justify-center btn btn-success btn-soft rounded-lg'>
+                        </button>
+                        <button onClick={video} className='h-24 flex items-center flex-col text-[#1F2937] text-xl justify-center btn btn-success btn-soft rounded-lg'>
                             <FiVideo />
                             <h1>Video</h1>
-                        </div>
+                        </button>
+                        <ToastContainer />
+
                     </div>
                 </div>
             </div>
