@@ -12,7 +12,7 @@ function App() {
       <header className='geist'>
         <Navbar></Navbar>
       </header>
-      <main className="min-h-screen bg-base-200">
+      <main className="min-h-screen bg-base-200 pb-2">
         <Outlet />
       </main>
       <Footer></Footer>
