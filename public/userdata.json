@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "picture": "https://i.pravatar.cc/150?img=1",
+        "email": "john@example.com",
+        "days_since_contact": 12,
+        "status": "overdue",
+        "tags": [
+            "college",
+            "close friend"
+        ],
+        "bio": "Met in university. Love hiking together.",
+        "goal": 14,
+        "next_due_date": "2025-07-20"
+    },
+    {
+        "id": 2,
+        "name": "Sarah Rahman",
+        "picture": "https://i.pravatar.cc/150?img=5",
+        "email": "sarah.rahman@example.com",
+        "days_since_contact": 3,
+        "status": "on-track",
+        "tags": [
+            "work",
+            "mentor"
+        ],
+        "bio": "My manager at first job. Always gives great advice.",
+        "goal": 7,
+        "next_due_date": "2025-07-15"
+    },
+    {
+        "id": 3,
+        "name": "Arif Hossain",
+        "picture": "https://i.pravatar.cc/150?img=3",
+        "email": "arif.h@example.com",
+        "days_since_contact": 30,
+        "status": "overdue",
+        "tags": [
+            "childhood",
+            "neighbor"
+        ],
+        "bio": "Grew up in the same neighborhood. Best childhood memories.",
+        "goal": 21,
+        "next_due_date": "2025-07-10"
+    },
+    {
+        "id": 4,
+        "name": "Emily Chen",
+        "picture": "https://i.pravatar.cc/150?img=9",
+        "email": "emily.chen@example.com",
+        "days_since_contact": 1,
+        "status": "on-track",
+        "tags": [
+            "college",
+            "roommate"
+        ],
+        "bio": "Roommate for 3 years in college. Still very close.",
+        "goal": 7,
+        "next_due_date": "2025-07-18"
+    },
+    {
+        "id": 5,
+        "name": "Rafi Islam",
+        "picture": "https://i.pravatar.cc/150?img=7",
+        "email": "rafi.islam@example.com",
+        "days_since_contact": 60,
+        "status": "overdue",
+        "tags": [
+            "family friend",
+            "long distance"
+        ],
+        "bio": "Family friend since childhood. Lives abroad now.",
+        "goal": 30,
+        "next_due_date": "2025-06-30"
+    },
+    {
+        "id": 6,
+        "name": "Nadia Sultana",
+        "picture": "https://i.pravatar.cc/150?img=47",
+        "email": "nadia.sultana@example.com",
+        "days_since_contact": 5,
+        "status": "on-track",
+        "tags": [
+            "work",
+            "close friend"
+        ],
+        "bio": "Met at a hackathon. We collaborate on side projects.",
+        "goal": 10,
+        "next_due_date": "2025-07-22"
+    },
+    {
+        "id": 7,
+        "name": "Karim Uddin",
+        "picture": "https://i.pravatar.cc/150?img=12",
+        "email": "karim.uddin@example.com",
+        "days_since_contact": 45,
+        "status": "overdue",
+        "tags": [
+            "cousin",
+            "family"
+        ],
+        "bio": "Cousin who moved to Canada. Need to catch up more often.",
+        "goal": 30,
+        "next_due_date": "2025-07-01"
+    },
+    {
+        "id": 8,
+        "name": "Priya Sharma",
+        "picture": "https://i.pravatar.cc/150?img=44",
+        "email": "priya.sharma@example.com",
+        "days_since_contact": 2,
+        "status": "on-track",
+        "tags": [
+            "gym",
+            "accountability partner"
+        ],
+        "bio": "Workout partner. Keeps me motivated every week.",
+        "goal": 7,
+        "next_due_date": "2025-07-19"
+    },
+    {
+        "id": 9,
+        "name": "Tanvir Ahmed",
+        "picture": "https://i.pravatar.cc/150?img=15",
+        "email": "tanvir.ahmed@example.com",
+        "days_since_contact": 20,
+        "status": "overdue",
+        "tags": [
+            "college",
+            "study group"
+        ],
+        "bio": "Study group buddy from final year. Smart and reliable.",
+        "goal": 14,
+        "next_due_date": "2025-07-05"
+    },
+    {
+        "id": 10,
+        "name": "Luna Park",
+        "picture": "https://i.pravatar.cc/150?img=49",
+        "email": "luna.park@example.com",
+        "days_since_contact": 8,
+        "status": "on-track",
+        "tags": [
+            "travel buddy",
+            "close friend"
+        ],
+        "bio": "Met backpacking in Thailand. We travel together every year.",
+        "goal": 14,
+        "next_due_date": "2025-07-25"
+    }
+]
