@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import User from '../user/User';
+
+const userFetch = async () => {
+    const res = await fetch('/userdata.json');
+    return res.json();
+}
 
 const Users = () => {
+
+    const userPromise = userFetch();
+
     return (
-        <div>
-            <h1>hi</h1>
+        <div className='w-340 mt-10 mb-20 mx-auto'>
+            <Suspense fallback={<span className="loading loading-ring loading-xl"></span>
+            }>
+                <User userPromise={userPromise}></User>
+            </Suspense>
         </div>
     );
 };

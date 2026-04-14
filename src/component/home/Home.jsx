@@ -6,7 +6,7 @@ import Users from '../users/Users';
 const Home = () => {
     return (
         <div>
-            <main className="min-h-screen bg-base-200">
+            <main className="min-h-screen container mx-auto text-center bg-base-200">
                 <HeroSection></HeroSection>
                 <Users></Users>
                 <Outlet></Outlet>

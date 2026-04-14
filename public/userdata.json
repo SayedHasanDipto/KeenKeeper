@@ -148,5 +148,35 @@
         "bio": "Met backpacking in Thailand. We travel together every year.",
         "goal": 14,
         "next_due_date": "2025-07-25"
+    },
+    {
+        "id": 11,
+        "name": "Marcus Chen",
+        "picture": "https://i.pravatar.cc/150?img=11",
+        "email": "marcus.chen@example.com",
+        "days_since_contact": 4,
+        "status": "on-track",
+        "tags": [
+            "mentor",
+            "professional"
+        ],
+        "bio": "Former manager at TechCorp. Provides guidance on career growth and leadership.",
+        "goal": 30,
+        "next_due_date": "2026-05-10"
+    },
+    {
+        "id": 12,
+        "name": "Elena Rodriguez",
+        "picture": "https://i.pravatar.cc/150?img=25",
+        "email": "elena.rod@example.com",
+        "days_since_contact": 18,
+        "status": "at-risk",
+        "tags": [
+            "college friend",
+            "hiking"
+        ],
+        "bio": "University roommate. We usually catch up every two weeks, but we're overdue.",
+        "goal": 14,
+        "next_due_date": "2026-04-10"
     }
 ]
