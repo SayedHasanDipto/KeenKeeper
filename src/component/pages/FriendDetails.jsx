@@ -15,7 +15,7 @@ const FriendDetails = () => {
     console.log(shouldBeFriends);
 
     return (
-        <div className='w-6xl  pt-20 flex mx-auto'>
+        <div className='w-6xl gap-5 pt-20 flex mx-auto'>
             <div className='space-y-4'>
                 <div className='shadow w-96 bg-base-100 rounded-xl items-center flex justify-center gap-4 flex-col p-10'>
                     <div className='w-20'>
@@ -76,10 +76,23 @@ const FriendDetails = () => {
 
                 </div>
             </div>
-            <div>
-                <h1>hi</h1>
+            <div className='w-full grid gap-4 grid-cols-3'>
+                <div className='w-full h-ful bg-base-100 shadow rounded-lg text-center flex justify-center items-center flex-col'>
+                    <h1 className='text-3xl text-[#244D3F] font-semibold'>{shouldBeFriends.days_since_contact}</h1>
+                    <p className='text-[#64748B] text-lg'>Days Since Contact</p>
+                </div>
+                <div className='w-full h-ful bg-base-100 shadow rounded-lg text-center flex justify-center items-center flex-col'>
+                    <h1 className='text-3xl text-[#244D3F] font-semibold'>{shouldBeFriends.goal}</h1>
+                    <p className='text-[#64748B] text-lg'>Goal (Days)</p>
+                </div>
+                <div className='w-full h-ful bg-base-100 shadow rounded-lg text-center flex justify-center items-center flex-col'>
+                    <h1 className='text-3xl text-[#244D3F] font-semibold'>{shouldBeFriends.next_due_date}</h1>
+                    <p className='text-[#64748B] text-lg'>Next Due</p>
+                </div>
+                <div className='w-full h-ful bg-base-100 shadow rounded-lg col-span-3'></div>
+                <div className='w-full h-ful bg-base-100 shadow rounded-lg col-span-3'></div>
             </div>
-        </div>
+        </div >
     );
 };
 
