@@ -33,7 +33,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='w-5xl mx-auto'>
-                    <div className='flex p-8 justify-between'>
+                    <div className='flex p-8 justify-between border-t border-[#ffffff1e]'>
                         <div>
                             <p className='text-[#d4d4d4]'>© 2026 KeenKeeper. All rights reserved.</p>
                         </div>
