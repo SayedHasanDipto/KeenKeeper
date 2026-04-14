@@ -22,9 +22,9 @@ const Friends = ({ friends }) => {
                                 }
                             </div>
                             <div>
-                                <button className={`btn text-[16px] rounded-full px-4 border-none ${friend.status === 'on-track'
+                                <button className={`btn text-[16px] rounded-full px-4 border-none ${friend.status === 'On-Track'
                                     ? 'btn-success'
-                                    : friend.status === 'overdue'
+                                    : friend.status === 'Overdue'
                                         ? 'btn-error'
                                         : 'btn-warning'
                                     }`}>

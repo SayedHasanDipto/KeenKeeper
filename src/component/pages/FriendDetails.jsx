@@ -51,8 +51,8 @@ const FriendDetails = () => {
                         <p className='text-[#64748B] text-center'>Preferred: {shouldBeFriends.email}</p>
                     </div>
                 </div>
-                <div className='space-y-2'>
-                    <button className='btn h-12 hover:btn-success w-full rounded-lg bg-base-100'>
+                <div className='space-y-5'>
+                    <button className='btn h-15 hover:btn-success w-full rounded-lg bg-base-100'>
                         <div className='text-base'>
                             <h1 className='flex font-base gap-1 items-center justify-center text-[#1F2937] font-medium'>
                                 <HiBellSnooze />
@@ -60,7 +60,7 @@ const FriendDetails = () => {
                             </h1>
                         </div>
                     </button>
-                    <button className='btn h-12 hover:btn-success w-full rounded-lg bg-base-100'>
+                    <button className='btn h-15 hover:btn-success w-full rounded-lg bg-base-100'>
                         <div className='text-base'>
                             <h1 className='flex font-base gap-1 items-center justify-center text-[#1F2937] font-medium'>
                                 <FaArchive />
@@ -68,7 +68,7 @@ const FriendDetails = () => {
                             </h1>
                         </div>
                     </button>
-                    <button className='btn h-12 hover:btn-success w-full rounded-lg bg-base-100'>
+                    <button className='btn h-15 hover:btn-success w-full rounded-lg bg-base-100'>
                         <div className='text-base'>
                             <h1 className='flex gap-1 items-center justify-center text-red-600 font-medium'>
                                 <ImBin />
@@ -106,15 +106,15 @@ const FriendDetails = () => {
                 <div className='w-full h-ful bg-base-100 p-6 shadow rounded-lg col-span-3'>
                     <h1 className='font-medium text-[#244D3F] mb-4 text-xl'>Quick Check-In</h1>
                     <div className='grid grid-cols-3 gap-4'>
-                        <div className='h-24 flex items-center flex-col text-[#1F2937] text-xl justify-center btn btn-success btn-disabled rounded-lg'>
+                        <div className='h-24 flex items-center flex-col text-[#1F2937] text-xl justify-center btn btn-success btn-soft rounded-lg'>
                             <TbPhoneCall />
                             <h1>Call</h1>
                         </div>
-                        <div className='h-24 flex items-center flex-col text-[#1F2937] text-xl justify-center btn btn-success btn-disabled rounded-lg'>
+                        <div className='h-24 flex items-center flex-col text-[#1F2937] text-xl justify-center btn btn-success btn-soft rounded-lg'>
                             <MdOutlineSms />
                             <h1>Text</h1>
                         </div>
-                        <div className='h-24 flex items-center flex-col text-[#1F2937] text-xl justify-center btn btn-success btn-disabled rounded-lg'>
+                        <div className='h-24 flex items-center flex-col text-[#1F2937] text-xl justify-center btn btn-success btn-soft rounded-lg'>
                             <FiVideo />
                             <h1>Video</h1>
                         </div>

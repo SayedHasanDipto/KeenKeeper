@@ -5,7 +5,7 @@
         "picture": "https://i.pravatar.cc/150?img=1",
         "email": "john@example.com",
         "days_since_contact": 12,
-        "status": "overdue",
+        "status": "Overdue",
         "tags": [
             "college",
             "close friend"
@@ -20,7 +20,7 @@
         "picture": "https://i.pravatar.cc/150?img=5",
         "email": "sarah.rahman@example.com",
         "days_since_contact": 3,
-        "status": "on-track",
+        "status": "On-Track",
         "tags": [
             "work",
             "mentor"
@@ -35,7 +35,7 @@
         "picture": "https://i.pravatar.cc/150?img=3",
         "email": "arif.h@example.com",
         "days_since_contact": 30,
-        "status": "overdue",
+        "status": "Overdue",
         "tags": [
             "childhood",
             "neighbor"
@@ -50,7 +50,7 @@
         "picture": "https://i.pravatar.cc/150?img=9",
         "email": "emily.chen@example.com",
         "days_since_contact": 1,
-        "status": "on-track",
+        "status": "On-Track",
         "tags": [
             "college",
             "roommate"
@@ -65,7 +65,7 @@
         "picture": "https://i.pravatar.cc/150?img=7",
         "email": "rafi.islam@example.com",
         "days_since_contact": 60,
-        "status": "overdue",
+        "status": "Overdue",
         "tags": [
             "family friend",
             "long distance"
@@ -80,7 +80,7 @@
         "picture": "https://i.pravatar.cc/150?img=47",
         "email": "nadia.sultana@example.com",
         "days_since_contact": 5,
-        "status": "on-track",
+        "status": "On-Track",
         "tags": [
             "work",
             "close friend"
@@ -95,7 +95,7 @@
         "picture": "https://i.pravatar.cc/150?img=12",
         "email": "karim.uddin@example.com",
         "days_since_contact": 45,
-        "status": "overdue",
+        "status": "Overdue",
         "tags": [
             "cousin",
             "family"
@@ -110,7 +110,7 @@
         "picture": "https://i.pravatar.cc/150?img=44",
         "email": "priya.sharma@example.com",
         "days_since_contact": 2,
-        "status": "on-track",
+        "status": "On-Track",
         "tags": [
             "gym",
             "accountability partner"
@@ -125,7 +125,7 @@
         "picture": "https://i.pravatar.cc/150?img=15",
         "email": "tanvir.ahmed@example.com",
         "days_since_contact": 20,
-        "status": "overdue",
+        "status": "Overdue",
         "tags": [
             "college",
             "study group"
@@ -140,7 +140,7 @@
         "picture": "https://i.pravatar.cc/150?img=49",
         "email": "luna.park@example.com",
         "days_since_contact": 8,
-        "status": "on-track",
+        "status": "On-Track",
         "tags": [
             "travel buddy",
             "close friend"
@@ -155,7 +155,7 @@
         "picture": "https://i.pravatar.cc/150?img=11",
         "email": "marcus.chen@example.com",
         "days_since_contact": 4,
-        "status": "on-track",
+        "status": "On-Track",
         "tags": [
             "mentor",
             "professional"
@@ -170,7 +170,7 @@
         "picture": "https://i.pravatar.cc/150?img=25",
         "email": "elena.rod@example.com",
         "days_since_contact": 18,
-        "status": "at-risk",
+        "status": "Almost-due",
         "tags": [
             "college friend",
             "hiking"
