@@ -13,18 +13,28 @@ const Friends = ({ friends }) => {
                             </div>
                             <h2 className="text-center text-[#1F2937] font-semibold text-xl">{friend.name}</h2>
                             <p className='text-[#64748B] text-sm'>{friend.days_since_contact}d ago</p>
-                            <div className="card-actions justify-center items-center">
+                            <div className="card-actions justify-center mb-2 items-center">
                                 {
                                     friend.tags.map(tag => {
-                                        return <button className="btn btn-soft btn-success rounded-full">{tag}</button>
+                                        return <button className="btn text-[16px] btn-soft btn-success rounded-full">{tag}</button>
                                     })
                                 }
+                            </div>
+                            <div>
+                                <button className={`btn text-[16px] rounded-full px-4 border-none ${friend.status === 'on-track'
+                                    ? 'btn-success'
+                                    : friend.status === 'overdue'
+                                        ? 'btn-error'
+                                        : 'btn-warning'
+                                    }`}>
+                                    {friend.status}
+                                </button>
                             </div>
                         </div>
                     </div>
                 })
             }
-        </div>
+        </div >
     );
 };
 
