@@ -12,9 +12,12 @@ const Users = () => {
 
     return (
         <div className='w-340 mt-10 mb-20 mx-auto'>
-            <Suspense fallback={<div>
-                <span className="loading loading-ring loading-xl"></span><span className="loading loading-ring loading-xl"></span><span className="loading loading-ring loading-xl"></span>
-            </div>
+            <Suspense fallback={
+                <div>
+                    <span className="loading loading-ring loading-xl"></span>
+                    <span className="loading loading-ring loading-xl"></span>
+                    <span className="loading loading-ring loading-xl"></span>
+                </div>
             }>
                 <User userPromise={userPromise}></User>
             </Suspense>

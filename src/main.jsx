@@ -8,6 +8,7 @@ import { RouterProvider } from "react-router/dom";
 import Home from './component/home/Home.jsx';
 import Timeline from './component/timeline/Timeline.jsx';
 import Stats from './component/stats/Stats.jsx';
+import FriendDetails from './component/pages/FriendDetails.jsx';
 
 
 const router = createBrowserRouter([
@@ -30,6 +31,11 @@ const router = createBrowserRouter([
       {
         path: "stats",
         element: <Stats />,
+      },
+      {
+        path: "friendDetails/:id",
+        element: <FriendDetails></FriendDetails>,
+        loader: () => fetch("/userdata.json")
       },
     ],
   },
