@@ -11,11 +11,14 @@ const Friends = ({ friends }) => {
                             <div className='w-20'>
                                 <img src={friend.picture} className='rounded-full' alt="friendImg" />
                             </div>
-                            <h2 className="text-center">{friend.name}</h2>
-                            <p>62d ago</p>
-                            <div className="card-actions justify-center flex-col items-center">
-                                <button className="btn">Buy Now</button>
-                                <button className="btn">Buy Now</button>
+                            <h2 className="text-center text-[#1F2937] font-semibold text-xl">{friend.name}</h2>
+                            <p className='text-[#64748B] text-sm'>{friend.days_since_contact}d ago</p>
+                            <div className="card-actions justify-center items-center">
+                                {
+                                    friend.tags.map(tag => {
+                                        return <button className="btn btn-soft btn-success rounded-full">{tag}</button>
+                                    })
+                                }
                             </div>
                         </div>
                     </div>
