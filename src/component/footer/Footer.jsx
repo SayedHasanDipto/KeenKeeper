@@ -9,7 +9,7 @@ const Footer = () => {
             <div className='container mx-auto'>
                 <div className='mb-10 pt-20'>
                     <div className='mb-6'>
-                        <h1 className='mb-4 text-7xl font-semibold'>KeenKeeper</h1>
+                        <h1 className='mb-4 text-7xl max-sm:text-[2rem] font-semibold'>KeenKeeper</h1>
                         <p className='leading-6 text-gray-300 w-11/12 mx-auto'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
                     </div>
                     <div>
@@ -33,7 +33,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='w-full mx-auto'>
-                    <div className='flex p-8 justify-between border-t border-[#ffffff1e]'>
+                    <div className='flex max-sm:flex-col max-sm:gap-4 p-8 justify-between border-t border-[#ffffff1e]'>
                         <div>
                             <p className='text-[#d4d4d4]'>© 2026 KeenKeeper. All rights reserved.</p>
                         </div>

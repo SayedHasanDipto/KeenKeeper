@@ -25,9 +25,9 @@ const FriendDetails = () => {
 
 
     return (
-        <div className='w-6xl gap-5 pt-20 flex mx-auto'>
-            <div className='space-y-4'>
-                <div className='shadow w-96 bg-base-100 rounded-xl items-center flex justify-center gap-4 flex-col p-10'>
+        <div className='w-6xl mb-10 max-lg:w-full gap-5 max-sm:gap-2 max-sm:flex-col max-md:flex-col max-lg:flex-wrap pt-20 flex mx-auto'>
+            <div className='space-y-4 max-lg:w-full mx-auto'>
+                <div className='shadow w-80 max-lg:w-full mx-auto bg-base-100 rounded-xl items-center flex justify-center gap-4 flex-col p-8 max-sm:p-8'>
                     <div className='w-20'>
                         <img src={shouldBeFriends.picture} className='rounded-full' alt="" />
                     </div>
@@ -58,7 +58,7 @@ const FriendDetails = () => {
                         <p className='text-[#64748B] text-center'>Preferred: {shouldBeFriends.email}</p>
                     </div>
                 </div>
-                <div className='space-y-5'>
+                <div className='space-y-3 w-80 max-lg:w-full mx-auto'>
                     <button className='btn h-15 hover:btn-success w-full rounded-lg bg-base-100'>
                         <div className='text-base'>
                             <h1 className='flex font-base gap-1 items-center justify-center text-[#1F2937] font-medium'>
@@ -86,18 +86,20 @@ const FriendDetails = () => {
 
                 </div>
             </div>
-            <div className='w-full grid gap-4 grid-cols-3 grid-rows-3'>
-                <div className='w-full h-ful bg-base-100 shadow rounded-lg text-center flex justify-center items-center flex-col p-6'>
-                    <h1 className='text-3xl text-[#244D3F] font-semibold'>{shouldBeFriends.days_since_contact}</h1>
-                    <p className='text-[#64748B] text-lg'>Days Since Contact</p>
-                </div>
-                <div className='w-full h-ful bg-base-100 shadow rounded-lg text-center flex justify-center items-center flex-col p-6'>
-                    <h1 className='text-3xl text-[#244D3F] font-semibold'>{shouldBeFriends.goal}</h1>
-                    <p className='text-[#64748B] text-lg'>Goal (Days)</p>
-                </div>
-                <div className='w-full h-ful bg-base-100 shadow rounded-lg text-center flex justify-center items-center flex-col p-6'>
-                    <h1 className='text-3xl text-[#244D3F] font-semibold'>{shouldBeFriends.next_due_date}</h1>
-                    <p className='text-[#64748B] text-lg'>Next Due</p>
+            <div className='w-full max-sm:mt-10 mx-auto space-y-5 max-sm:w-72 max-lg:w-full mb-5'>
+                <div className='flex justify-between gap-5 w-full mx-auto max-sm:flex-col'>
+                    <div className='w-full h-ful bg-base-100 shadow rounded-lg text-center flex justify-center items-center flex-col p-6'>
+                        <h1 className='text-3xl text-[#244D3F] font-semibold'>{shouldBeFriends.days_since_contact}</h1>
+                        <p className='text-[#64748B] text-lg'>Days Since Contact</p>
+                    </div>
+                    <div className='w-full h-ful bg-base-100 shadow rounded-lg text-center flex justify-center items-center flex-col p-6'>
+                        <h1 className='text-3xl text-[#244D3F] font-semibold'>{shouldBeFriends.goal}</h1>
+                        <p className='text-[#64748B] text-lg'>Goal (Days)</p>
+                    </div>
+                    <div className='w-full h-ful bg-base-100 shadow rounded-lg text-center flex justify-center items-center flex-col p-6'>
+                        <h1 className='text-3xl text-[#244D3F] font-semibold'>{shouldBeFriends.next_due_date}</h1>
+                        <p className='text-[#64748B] text-lg'>Next Due</p>
+                    </div>
                 </div>
                 <div className='w-full h-ful bg-base-100 p-6 shadow rounded-lg col-span-3 flex justify-between items-center'>
                     <div>
