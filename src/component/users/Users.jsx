@@ -11,7 +11,7 @@ const Users = () => {
     const userPromise = userFetch();
 
     return (
-        <div className='w-340 mt-10 mb-20 mx-auto'>
+        <div className='w-full mt-10 mb-20 mx-auto'>
             <Suspense fallback={
                 <div>
                     <span className="loading loading-ring loading-xl"></span>

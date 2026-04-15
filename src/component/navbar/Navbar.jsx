@@ -15,7 +15,7 @@ const Navbar = () => {
             <div className='container mx-auto navbar'>
                 <div className="navbar bg-base-100">
                     <div className="navbar-start">
-                        <NavLink to="/" className="primary-color text-2xl font-semibold">
+                        <NavLink to="/" className="primary-color text-2xl max-sm:text-lg font-semibold">
                             Keen
                             <span className='scnd-color'>
                                 Keeper
@@ -23,7 +23,7 @@ const Navbar = () => {
                         </NavLink>
                     </div>
                     <div className="navbar-end">
-                        <div className='flex gap-4 font-semibold'>
+                        <div className='flex gap-4 max-sm:gap-0 font-semibold'>
                             <NavLink
                                 to="home"
                                 className={`flex items-center gap-1 btn ${isHomeActive ? "btn-success" : "btn-ghost btn-success text-[#64748B]"

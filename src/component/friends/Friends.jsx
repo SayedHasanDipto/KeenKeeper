@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 const Friends = ({ friends }) => {
     console.log(friends);
     return (
-        <div className='grid grid-cols-4 gap-10 mt-8'>
+        <div className='grid grid-cols-4 max-sm:grid-cols-1 max-lg:grid-cols-2 gap-10 mt-8'>
             {
                 friends.map(friend => {
                     return <Link to={`friendDetails/${friend.id}`} key={friend.id} className="card bg-base-100 min-w-70 hover:-translate-y-3 transition delay-75 duration-300 ease-in-out shadow">
