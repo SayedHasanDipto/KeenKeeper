@@ -7,7 +7,7 @@ const User = ({ userPromise }) => {
     // console.log(friends);
 
     return (
-        <div>
+        <div className=''>
             <h1 className='font-semibold text-left text-2xl text-[#1F2937]'>Your Friends</h1>
             <Friends friends={friends}></Friends>
         </div>

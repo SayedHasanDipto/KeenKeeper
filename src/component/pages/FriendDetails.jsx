@@ -19,9 +19,9 @@ const FriendDetails = () => {
     console.log(shouldBeFriends);
 
     // React Tostify
-    const call = () => toast('Call with');
-    const text = () => toast('Text with');
-    const video = () => toast('Video with');
+    const call = () => toast(`Call with ${shouldBeFriends.name}`);
+    const text = () => toast(`Text with ${shouldBeFriends.name}`);
+    const video = () => toast(`Video with ${shouldBeFriends.name}`);
 
 
     return (

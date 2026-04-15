@@ -15,7 +15,7 @@ const HeroSection = () => {
                         <button className="btn btn-success text-white"><IoAddOutline />
                             Add a Friend</button>
                     </div>
-                    <div className='grid grid-cols-4 gap-4 justify-evenly w-340'>
+                    <div className='flex gap-4 justify-between w-340 mx-auto'>
                         <div className='p-8 bg-white rounded-xl w-70 h-37 flex items-center justify-center flex-col hover:-translate-y-3 transition delay-75 duration-300 ease-in-out shadow'>
                             <h1 className='text-[#244D3F] text-3xl font-semibold'>12</h1>
                             <p className='text-lg text-[#64748B]'>Total Friends</p>
