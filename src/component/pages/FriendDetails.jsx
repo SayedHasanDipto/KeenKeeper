@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLoaderData, useParams } from 'react-router';
+import { useLoaderData, useOutletContext, useParams } from 'react-router';
 import { HiBellSnooze } from "react-icons/hi2";
 import { FaArchive } from "react-icons/fa";
 import { ImBin } from "react-icons/im";
@@ -18,13 +18,17 @@ const FriendDetails = () => {
     const shouldBeFriends = friends.find(friend => friend.id == id)
     console.log(shouldBeFriends);
 
+    const [, setSharedData] = useOutletContext();
+
     // React Tostify
     const call = () => {
         toast(`Call with ${shouldBeFriends.name}`);
         console.log("call clicked");
+        setSharedData({ id: 1, name: "John Doe", message: "Hello from Details!" });
     }
     const text = () => toast(`Text with ${shouldBeFriends.name}`);
     const video = () => toast(`Video with ${shouldBeFriends.name}`);
+
 
 
     return (
