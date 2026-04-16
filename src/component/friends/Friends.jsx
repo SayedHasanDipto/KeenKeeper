@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const Friends = ({ friends }) => {
-    console.log(friends);
+    // console.log(friends);
     return (
         <div className='grid grid-cols-4 max-sm:grid-cols-1 max-lg:grid-cols-2 gap-10 mt-8'>
             {
@@ -16,8 +16,8 @@ const Friends = ({ friends }) => {
                             <p className='text-[#64748B] text-sm'>{friend.days_since_contact}d ago</p>
                             <div className="card-actions justify-center mb-2 items-center">
                                 {
-                                    friend.tags.map(tag => {
-                                        return <button className="btn text-[16px] btn-outline btn-success rounded-full">{tag}</button>
+                                    friend.tags.map((tag) => {
+                                        return <button key={tag} className="btn text-[16px] btn-outline btn-success rounded-full" > {tag}</button>
                                     })
                                 }
                             </div>

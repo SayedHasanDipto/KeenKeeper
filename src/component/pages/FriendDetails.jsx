@@ -19,7 +19,10 @@ const FriendDetails = () => {
     console.log(shouldBeFriends);
 
     // React Tostify
-    const call = () => toast(`Call with ${shouldBeFriends.name}`);
+    const call = () => {
+        toast(`Call with ${shouldBeFriends.name}`);
+        console.log("call clicked");
+    }
     const text = () => toast(`Text with ${shouldBeFriends.name}`);
     const video = () => toast(`Video with ${shouldBeFriends.name}`);
 
@@ -47,7 +50,7 @@ const FriendDetails = () => {
                             <div className="card-actions">
                                 {
                                     shouldBeFriends.tags.map(tag => {
-                                        return <button className="btn text-[16px] btn-outline btn-success rounded-full">{tag}</button>
+                                        return <button key={tag} className="btn text-[16px] btn-outline btn-success rounded-full">{tag}</button>
                                     })
                                 }
                             </div>
