@@ -21,22 +21,27 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "home",
+        path: "/home",
         element: <Home />,
       },
       {
-        path: "timeline",
+        path: "/timeline",
         element: <Timeline />,
       },
       {
-        path: "stats",
+        path: "/stats",
         element: <Stats />,
       },
       {
-        path: "friendDetails/:id",
+        path: "/friendDetails/:id",
         element: <FriendDetails></FriendDetails>,
         loader: () => fetch("/userdata.json")
       },
+      {
+        path: "/home/friendDetails/:id",
+        element: <FriendDetails />,
+        loader: () => fetch("/userdata.json")
+      }
     ],
   },
 ]);

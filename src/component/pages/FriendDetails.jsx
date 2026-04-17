@@ -18,18 +18,23 @@ const FriendDetails = () => {
     const shouldBeFriends = friends.find(friend => friend.id == id)
     console.log(shouldBeFriends);
 
-    const [, setSharedData] = useOutletContext();
 
-    // React Tostify
-    const call = () => {
-        toast(`Call with ${shouldBeFriends.name}`);
-        console.log("call clicked");
-        setSharedData({ id: 1, name: "John Doe", message: "Hello from Details!" });
-    }
-    const text = () => toast(`Text with ${shouldBeFriends.name}`);
-    const video = () => toast(`Video with ${shouldBeFriends.name}`);
+    const [, setTimelineData] = useOutletContext();
 
+    const handleAction = (type) => {
+        const newEntry = {
+            ...shouldBeFriends,
+            actionType: type,
+            timestamp: new Date().toLocaleDateString('en-US', {
+                month: 'long',
+                day: 'numeric',
+                year: 'numeric'
+            })
+        };
 
+        setTimelineData(prev => [...prev, newEntry]);
+        toast(`${type} with ${shouldBeFriends.name}`);
+    };
 
     return (
         <div className='w-6xl mb-10 max-lg:w-full gap-5 max-sm:gap-2 max-sm:flex-col max-md:flex-col max-lg:flex-wrap pt-20 flex mx-auto'>
@@ -122,15 +127,15 @@ const FriendDetails = () => {
                 <div className='w-full h-ful bg-base-100 p-6 shadow rounded-lg col-span-3'>
                     <h1 className='font-medium text-[#244D3F] mb-4 text-xl'>Quick Check-In</h1>
                     <div className='grid grid-cols-3 gap-4'>
-                        <button onClick={call} className='h-24 flex items-center flex-col text-[#1F2937] text-xl justify-center btn btn-success btn-soft rounded-lg'>
+                        <button onClick={() => handleAction('Call')} className='h-24 flex items-center flex-col text-[#1F2937] text-xl justify-center btn btn-success btn-soft rounded-lg'>
                             <TbPhoneCall />
                             <h1>Call</h1>
                         </button>
-                        <button onClick={text} className='h-24 flex items-center flex-col text-[#1F2937] text-xl justify-center btn btn-success btn-soft rounded-lg'>
+                        <button onClick={() => handleAction('Text')} className='h-24 flex items-center flex-col text-[#1F2937] text-xl justify-center btn btn-success btn-soft rounded-lg'>
                             <MdOutlineSms />
                             <h1>Text</h1>
                         </button>
-                        <button onClick={video} className='h-24 flex items-center flex-col text-[#1F2937] text-xl justify-center btn btn-success btn-soft rounded-lg'>
+                        <button onClick={() => handleAction('Video')} className='h-24 flex items-center flex-col text-[#1F2937] text-xl justify-center btn btn-success btn-soft rounded-lg'>
                             <FiVideo />
                             <h1>Video</h1>
                         </button>

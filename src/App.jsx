@@ -8,17 +8,17 @@ import { useState } from 'react';
 
 function App() {
 
-  const [sharedData, setSharedData] = useState(null)
+  const [timelineData, setTimelineData] = useState([]);
 
   return (
     <>
       <header className='geist'>
         <Navbar></Navbar>
       </header>
-      <main className="min-h-screen bg-base-200 pb-2">
-        <Outlet context={[sharedData, setSharedData]} />
+      <main className="min-h-screen bg-base-200 pb-2 geist">
+        <Outlet context={[timelineData, setTimelineData]} />
       </main>
-      <Footer></Footer>
+      <Footer className="geist"></Footer>
     </>
   )
 }
