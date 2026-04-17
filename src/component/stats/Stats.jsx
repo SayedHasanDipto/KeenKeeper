@@ -19,9 +19,9 @@ const Stats = () => {
 
 
     return (
-        <div className='w-6xl mx-auto pt-20'>
+        <div className='w-6xl max-lg:w-full max-sm:w-full mx-auto pt-20'>
             <div className='mb-6'>
-                <h1 className='text-[#1F2937] text-5xl font-bold'>Friendship Analytics</h1>
+                <h1 className='text-[#1F2937] text-5xl max-lg:text-3xl max-lg:ml-7 font-bold'>Friendship Analytics</h1>
             </div>
             <div className='spacey-6 pt-8 pb-1 px-8 shadow bg-base-100 rounded-lg'>
                 <h1 className='text-xl text-[#244D3F] font-bold mb-20'>By Interaction Type</h1>
