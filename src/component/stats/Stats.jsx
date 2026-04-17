@@ -23,10 +23,10 @@ const Stats = () => {
             <div className='mb-6'>
                 <h1 className='text-[#1F2937] text-5xl font-bold'>Friendship Analytics</h1>
             </div>
-            <div className='spacey-6 p-8 shadow bg-base-100 rounded-lg'>
-                <h1 className='text-xl text-[#244D3F] font-bold mb-10'>By Interaction Type</h1>
+            <div className='spacey-6 pt-8 pb-1 px-8 shadow bg-base-100 rounded-lg'>
+                <h1 className='text-xl text-[#244D3F] font-bold mb-20'>By Interaction Type</h1>
                 <div className='flex justify-center items-center mb-8'>
-                    <PieChart style={{ width: '100%', maxWidth: '200px', maxHeight: '60vh', aspectRatio: 1 }} responsive>
+                    <PieChart style={{ width: '100%', maxWidth: '300px', maxHeight: '70vh', aspectRatio: 1 }} responsive>
                         <Pie
                             data={data}
                             innerRadius="80%"
@@ -37,7 +37,7 @@ const Stats = () => {
                             dataKey="value"
                             isAnimationActive={true}
                         />
-                        <Legend />
+                        <Legend verticalAlign="bottom" align="center" iconType="circle" wrapperStyle={{ paddingTop: "20px" }} />
                         <Tooltip />
                     </PieChart>
                 </div>

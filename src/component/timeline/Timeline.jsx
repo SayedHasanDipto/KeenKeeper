@@ -3,6 +3,8 @@ import { useOutletContext } from 'react-router';
 import CallPng from '../../assets/call.png';
 import VideoPng from '../../assets/video.png';
 import TextPng from '../../assets/text.png';
+import { FaChevronDown } from "react-icons/fa6";
+
 
 const Timeline = () => {
     const [timelineData, setTimelineData] = useOutletContext();
@@ -37,7 +39,8 @@ const Timeline = () => {
                     className="w-full rounded-lg p-3 flex justify-between items-center bg-white shadow-sm text-gray-600"
                 >
                     {filter}
-                    <span className={`transition-transform ${isOpen ? 'rotate-180' : ''}`}>▼</span>
+                    <span className={`transition-transform ${isOpen ? 'rotate-180' : ''}`}><FaChevronDown />
+                    </span>
                 </button>
 
                 {isOpen && (

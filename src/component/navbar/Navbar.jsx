@@ -23,7 +23,7 @@ const Navbar = () => {
                         </NavLink>
                     </div>
                     <div className="navbar-end">
-                        <div className='flex gap-4 max-sm:gap-0 font-semibold'>
+                        <div className='flex gap-2 max-sm:gap-0 font-semibold'>
                             <NavLink
                                 to="home"
                                 className={`flex items-center gap-1 btn ${isHomeActive ? "btn-success" : "btn-ghost btn-success text-[#64748B]"
@@ -33,7 +33,6 @@ const Navbar = () => {
                                 Home
                             </NavLink>
 
-                            {/* Timeline - আগের মতোই */}
                             <NavLink
                                 to="timeline"
                                 className={({ isActive }) =>
@@ -44,7 +43,6 @@ const Navbar = () => {
                                 Timeline
                             </NavLink>
 
-                            {/* Stats - আগের মতোই */}
                             <NavLink
                                 to="stats"
                                 className={({ isActive }) =>
