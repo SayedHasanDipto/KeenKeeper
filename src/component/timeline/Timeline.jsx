@@ -5,7 +5,7 @@ import VideoPng from '../../assets/video.png';
 import TextPng from '../../assets/text.png';
 
 const Timeline = () => {
-    const [timelineData] = useOutletContext();
+    const [timelineData, setTimelineData] = useOutletContext();
     const [filter, setFilter] = useState('All Activity');
     const [isOpen, setIsOpen] = useState(false);
 
@@ -13,6 +13,19 @@ const Timeline = () => {
         if (filter === 'All Activity') return true;
         return item.actionType.toLowerCase() === filter.toLowerCase();
     });
+
+    const handleOptionClick = (opt) => {
+        if (opt !== 'All Activity') {
+            const newActivity = {
+                actionType: opt,
+                name: "New Interaction",
+                time: new Date().toLocaleDateString()
+            };
+            setTimelineData([...timelineData, newActivity]);
+        }
+        setFilter(opt);
+        setIsOpen(false);
+    };
 
     return (
         <div className="p-5 max-w-4xl mx-auto">
@@ -33,6 +46,7 @@ const Timeline = () => {
                             <li
                                 key={opt}
                                 onClick={() => {
+                                    handleOptionClick(opt);
                                     setFilter(opt);
                                     setIsOpen(false);
                                 }}

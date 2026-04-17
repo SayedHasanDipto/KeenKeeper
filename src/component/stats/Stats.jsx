@@ -1,14 +1,20 @@
 import React from 'react';
+import { useOutletContext } from 'react-router';
 import { ToolTips } from 'rechart';
 import { Legend, Pie, PieChart, Tooltip } from 'recharts';
 
 const Stats = () => {
+    const [timelineData] = useOutletContext();
+
+    const callCount = timelineData.filter(item => item.actionType === 'Call').length;
+    const textCount = timelineData.filter(item => item.actionType === 'Text').length;
+    const videoCount = timelineData.filter(item => item.actionType === 'Video').length;
 
     const data = [
-        { name: "Text", value: 400, fill: "#0B666A" },
-        { name: "Call", value: 300, fill: "#7132CA" },
-        { name: "Video", value: 300, fill: "#54C392" },
-    ]
+        { name: "Text", value: textCount, fill: "#0B666A" },
+        { name: "Call", value: callCount, fill: "#7132CA" },
+        { name: "Video", value: videoCount, fill: "#54C392" },
+    ];
 
 
 
